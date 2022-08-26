@@ -65,9 +65,20 @@
 .start-test .start {
     display: flex;
     flex-direction: row;
+    /* width: 300px; */
     height: 40px;
-    justify-content: center;
+    border: 1px solid #000;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 1;
+}
+
+.start-test .start:hover {
+    background-color: #000;
+    color: #fff;
 }
 
 .test-text > h1 {
@@ -81,20 +92,35 @@
 
 .start > p {
     font-size: 20px;
+    width: 100%;
     font-weight: 500;
     text-transform: capitalize;
+    margin-left: 10px;
 }
 
-.start .arrow-right {
+.start > button {
     width: 40px;
     height: 40px;
     background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 99;
+}
+
+.start > button .arrow-right {
+    display: flex;
+    flex-direction: row;
+    transform: translateX(-20px);
+    transition: .5s;
+}
+
+.start > button .arrow-right:hover {
+    transform: translateX(20px);
 }
 
 .arrow-right > img {
-    width: 30px;
-    height: 30px;
+    margin: 0 5px;
 }
