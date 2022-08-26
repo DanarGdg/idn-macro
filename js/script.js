@@ -7,6 +7,7 @@ const navbarTextMobile = document.querySelector('.navbar-text-mobile')
 const closeLogo = document.querySelector('.close-logo')
 const logoWhite = document.querySelector('.logo img:nth-child(1)')
 const logoBlack = document.querySelector('.logo img:nth-child(2)')
+const body = document.querySelector('body')
 
 dropdown.addEventListener('click', () => {
     arrowDropdown.classList.toggle("active")
@@ -20,6 +21,7 @@ hamburgerLogo.addEventListener('click', () => {
     logoWhite.classList.toggle('active')
     logoBlack.classList.toggle('active')
     hamburgerLogo.classList.toggle('active')
+    body.style.overflow = 'hidden'
 })
 
 closeLogo.addEventListener('click', () => {
@@ -29,6 +31,7 @@ closeLogo.addEventListener('click', () => {
     logoWhite.classList.toggle('active')
     logoBlack.classList.toggle('active')
     hamburgerLogo.classList.toggle('active')
+    body.style.overflow = 'auto'
 })
 
 // const body = document.body,
