@@ -118,7 +118,7 @@ header{
 .dropdown-content a:hover {
     background-color: #ddd;
 }
-  
+
 .dropdown-content.active {
     transform: translateY(0);
     display: block;
