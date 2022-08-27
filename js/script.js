@@ -7,6 +7,7 @@ const navbarTextMobile = document.querySelector('.navbar-text-mobile')
 const closeLogo = document.querySelector('.close-logo')
 const logoWhite = document.querySelector('.logo img:nth-child(1)')
 const logoBlack = document.querySelector('.logo img:nth-child(2)')
+const body = document.querySelector('body')
 
 dropdown.addEventListener('click', () => {
     arrowDropdown.classList.toggle("active")
