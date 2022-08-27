@@ -399,7 +399,7 @@ footer{
     height: 200px;
     background-color: #fff;
     color: #000;
-    border-top: 2px solid #000;
+    border-top: 1px solid #000;
 }
 
 .footer-text{
@@ -413,6 +413,10 @@ footer{
 
 .footer-text > img {
     margin-bottom: 20px;
+}
+
+.footer-text > p {
+    font-weight: 400;
 }
 
 /* end footer */
@@ -551,6 +555,19 @@ footer{
     .card {
         margin-bottom: 2rem;
     }
+
+    /* RESPONSIVE FOOTER */
+    
+    footer {
+        height: 100px;
+    }
+
+    .footer-text > img {
+        margin-bottom: 10px;
+        width: 80px;
+    }
+
+    /* END RESPONSIVE FOOTER */
 
 }
 
