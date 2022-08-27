@@ -14,13 +14,14 @@ body{
 
 /* HEADER */
 
-header{
+header {
     background: url(../assets/images/bg-home-new.png);
     width: 100%;
-    height: 0vh;
+    height: 100vh;
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
+    /* backdrop-filter: brightness(-100%); */
 }
 
 .hero-text{
