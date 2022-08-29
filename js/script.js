@@ -61,6 +61,22 @@ window.addEventListener('scroll', function() {
     })
 })
 
+// if id blog1 clicked then show blog1.html
+const blog1 = document.querySelector('#blog1');
+const blog2 = document.querySelector('#blog2');
+const blog3 = document.querySelector('#blog3');
+
+blog1.addEventListener('click', () => {
+    window.location.href = 'blog1.html'
+})
+
+blog2.addEventListener('click', () => {
+    window.location.href = 'blog2.html'
+})
+
+blog3.addEventListener('click', () => {
+    window.location.href = 'blog3.html'
+})
 // const body = document.body,
 // scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
 // height = scrollWrap.getBoundingClientRect().height - 1,
