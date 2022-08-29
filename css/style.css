@@ -377,7 +377,7 @@ header {
   width: 350px;
   height: 500px;
   /* padding: 2rem 2rem; */
-  padding: 0;
+  padding: 0 20px;
   border: solid 2px black;
   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
   transition: all 0.3s ease-in-out;
@@ -627,6 +627,7 @@ footer {
 
   .card {
     margin-bottom: 2rem;
+    padding: 0;
   }
 
   /* RESPONSIVE FOOTER */
