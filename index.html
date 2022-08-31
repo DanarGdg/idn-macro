@@ -17,8 +17,8 @@
 
         <div class="navbar-right">
             <ul class="navbar-text">
-                <li class="li">Home</li>
-                <li class="li">Blog</li>
+                <li class="li" id="home" onclick="backToHome()">Home</li>
+                <li class="li" id="blog">Blog</li>
                 <li class="dropdown"> 
                     <button class="dropbtn">Test Mata
                         <img class="arrow-down" src="assets/icons/arrow-down.svg" alt="arrow down logo">
@@ -44,8 +44,8 @@
         </div>
 
         <ul class="navbar-text-mobile">
-            <li>Home</li>
-            <li>Blog</li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/all-blog.html">Blog</a></li>
             <li><a href="#">Test Rabun</a></li>
             <li><a href="#">Test Buta Warna</a></li>
         </ul>
@@ -90,6 +90,38 @@
         </div>
     </div>
     <!-- end test -->
+
+    <!-- pop up test -->
+    <div class="pop-up-container" id="popup">
+        <div class="pop-up" id="popupMain">
+            <div class="close">
+                <img src="/assets/icons/close-btn.svg" alt="" id="back">
+            </div>
+            <div class="content">
+                <div class="tes rabun">
+                    <div class="image">
+                        <img src="/assets/images/tes-rabun.png" alt="">
+                    </div>
+                    <h1>Tes Rabun</h1>
+                    <div class="mulai-tes">
+                        <p>Mulai Tes</p>
+                        <div class="block"></div>
+                    </div>
+                </div>
+                <div class="tes buta-warna">
+                    <div class="image">
+                        <img src="/assets/images/tes-buta-warna.png" alt="">
+                    </div>
+                    <h1>Tes Buta Warna</h1>
+                    <div class="mulai-tes">
+                        <p>Mulai Tes</p>
+                        <div class="block"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end pop up test -->
 
     <!-- BLOG -->
     <div class="blog">

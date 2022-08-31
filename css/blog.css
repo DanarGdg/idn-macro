@@ -28,7 +28,7 @@ body{
     height: auto;
     display: flex;
     justify-content: center;
-    border-right: 2px solid #000;
+    border-right: solid 1px rgba(0, 0, 0, 0.2);
     padding: 50px 0;
 }
 
@@ -48,7 +48,7 @@ body{
     width: 70px;
     height: 70px;
     border-radius: 100%;
-    border: 2px solid #000;
+    border: solid 2px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,25 +179,26 @@ footer {
     height: 200px;
     background-color: #fff;
     color: #000;
-    border-top: 2px solid #000;
-}
-
-.footer-text {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .footer-text {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
     height: 100%;
-}
-
-.footer-text > img {
+  }
+  
+  .footer-text > img {
     margin-bottom: 20px;
-}
-
-.footer-text > p {
+  }
+  
+  .footer-text > p {
     font-weight: 400;
-}
+    color: rgba(0, 0, 0, 0.6);
+  }
 
 /* end footer */
 
@@ -339,6 +340,14 @@ footer {
 
     .content-blog > h1 {
         font-size: 26px;
+    }
+
+    .content-blog > h2 {
+        text-align: center;
+    }
+
+    .content-blog > h3 {
+        text-align: center;
     }
 
     .content-blog > p {
