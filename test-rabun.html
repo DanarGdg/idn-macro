@@ -69,7 +69,7 @@
             </div>
             <form action="#" onsubmit="btnLanjutHandling()">
                 <div class="wrapper-input-check">
-                    <input type="text" id="input-test" maxlength="8">
+                    <input type="text" id="input-test" maxlength="8" autocomplete="off">
                     <img src="assets/icons/check-circle-icon.svg" alt="check circle icon">
                 </div>
                 <p>Huruf tidak dibedakan antara huruf kapital atau huruf kecil</p>
@@ -86,7 +86,7 @@
             <p>Selamat telah menyelesaikan tes!</p>
             <div class="wrapper-btn-test-selesai">
                 <button><a href="index.html">Selesai</a></button>
-                <button>Mengulangi test</button>
+                <button onclick="mengulangiTest()">Mengulangi test</button>
                 <button class="btnSelesai">Hasil</button>
             </div>
         </div>
