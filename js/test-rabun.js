@@ -203,3 +203,12 @@ btnSelesai.addEventListener('click', () => {
         hasilBuruk.classList.add('active')
     }
 }) 
+
+function backToHome(){
+    window.location.href = 'index.html'
+}
+
+const blog = document.getElementById('blog');
+blog.addEventListener('click', () => {
+    window.location.href = 'all-blog.html'
+})
