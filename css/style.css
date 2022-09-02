@@ -835,6 +835,14 @@ footer {
   .blog {
     margin: 0;
   }
+
+  .card .detail-blog p{
+    font-size: .9em;
+  }
+
+  .card .detail-blog{
+    padding: 0 1rem;
+  }
   /* END BLOG  */
 
   /* RESPONSIVE FOOTER */

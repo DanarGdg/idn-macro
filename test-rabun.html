@@ -74,7 +74,10 @@
                 </div>
                 <p>Huruf tidak dibedakan antara huruf kapital atau huruf kecil</p>
                 <input type="submit" value="submit">
-                <button class="btn-lanjut">Lanjut</button>
+                <button class="btn-lanjut mulai-tes">
+                    <p>Mulai Tes</p>
+                    <div class="block"></div>
+                </button>
                 <img class="error-input" src="assets/icons/error-input.svg" alt="error input">
                 <img class="error-input-mobile" src="assets/icons/error-input-mobile.svg" alt="error input">
             </form>
@@ -84,10 +87,24 @@
             <h1>TEST MATA RABUN</h1>
             <img src="assets/icons/check-circle-icon.svg" alt="check circle icon">
             <p>Selamat telah menyelesaikan tes!</p>
-            <div class="wrapper-btn-test-selesai">
-                <button><a href="index.html">Selesai</a></button>
+            <div class="wrapper-btn-selesai">
+                <button class="mulai-tes responsive-btn">
+                    <a href="index.html">Selesai</a>
+                    <div class="block"></div>
+                </button>
+
+                <button onclick="mengulangiTest()" class="mulai-tes responsive-btn">
+                    <p>Mengulangi test</p>
+                    <div class="block"></div>
+                </button>
+
+                <button class="mulai-tes btnSelesai responsive-btn">
+                    <p>Hasil</p>
+                    <div class="block"></div>
+                </button>
+                <!-- <button><a href="index.html">Selesai</a></button>
                 <button onclick="mengulangiTest()">Mengulangi test</button>
-                <button class="btnSelesai">Hasil</button>
+                <button class="btnSelesai">Hasil</button> -->
             </div>
         </div>
 
@@ -98,8 +115,17 @@
             <h1>Good job ! Mata Kamu bagus</h1>
             <p>Jangan lupa test mata kanannya kamu juga ya !</p>
             <div class="wrapper-btn-hasil">
-                <button><a href="index.html">Selesai</a></button>
-                <button onclick="mengulangiTest()">Mengulangi test</button>
+                <button class="mulai-tes">
+                    <a href="index.html">Selesai</a>
+                    <div class="block"></div>
+                </button>
+
+                <button onclick="mengulangiTest()" class="mulai-tes">
+                    <p>Mengulangi test</p>
+                    <div class="block"></div>
+                </button>
+                <!-- <button><a href="index.html">Selesai</a></button>
+                <button onclick="mengulangiTest()">Mengulangi test</button> -->
             </div>
         </div>
 
@@ -110,8 +136,15 @@
             <h1>Lumayan ! Kurangi Bermain Depan Gadget</h1>
             <p>Jangan lupa test mata kanannya kamu juga ya !</p>
             <div class="wrapper-btn-hasil">
-                <button><a href="index.html">Selesai</a></button>
-                <button onclick="mengulangiTest()">Mengulangi test</button>
+                <button class="mulai-tes">
+                    <a href="index.html">Selesai</a>
+                    <div class="block"></div>
+                </button>
+
+                <button onclick="mengulangiTest()" class="mulai-tes">
+                    <p>Mengulangi test</p>
+                    <div class="block"></div>
+                </button>
             </div>
         </div>
 
@@ -122,8 +155,15 @@
             <h1>Buruk ! Segera Periksa ke klinik terdekat</h1>
             <p>Jangan lupa test mata kanannya kamu juga ya !</p>
             <div class="wrapper-btn-hasil">
-                <button><a href="index.html">Selesai</a></button>
-                <button onclick="mengulangiTest()">Mengulangi test</button>
+                <button class="mulai-tes">
+                    <a href="index.html">Selesai</a>
+                    <div class="block"></div>
+                </button>
+
+                <button onclick="mengulangiTest()" class="mulai-tes">
+                    <p>Mengulangi test</p>
+                    <div class="block"></div>
+                </button>
             </div>
         </div>
     </main>

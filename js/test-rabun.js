@@ -28,6 +28,8 @@ const hasilBuruk = document.querySelector('.hasil-buruk')
 const errorInput = document.querySelector('.error-input')
 const errorInputMobile = document.querySelector('.error-input-mobile')
 
+console.log(btnLanjut);
+
 dropdown.addEventListener('click', () => {
     arrowDropdown.classList.toggle("active")
     dropdownContent.classList.toggle("active")
