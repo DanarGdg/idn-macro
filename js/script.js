@@ -110,6 +110,10 @@ back.addEventListener('click', () => {
     body.style.overflow = 'auto';
 } )
 
+function goToTesRabun(){
+    window.location.href = 'test-rabun.html'
+}
+
 // const body = document.body,
 // scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
 // height = scrollWrap.getBoundingClientRect().height - 1,
