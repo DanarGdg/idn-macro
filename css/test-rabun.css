@@ -225,12 +225,22 @@ main{
   margin: 1rem 0;
 }
 
+.wrapper-btn-test-selesai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
 .test-rabun button, .wrapper-btn-test-selesai button, .wrapper-btn-hasil button{
-  background-color: black;
-  color: white;
   border: none;
-  padding: .5rem 1.5rem;
-  font-weight: 600;
+}
+
+.wrapper-btn-hasil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 .wrapper-btn-test-selesai button, .wrapper-btn-hasil button{
@@ -289,7 +299,7 @@ form .error-input.active{
 }
 
 .wrapper-btn-test-selesai button a, .wrapper-btn-hasil button a{
-  color: white;
+  /* color: white; */
   text-decoration: none;
 }
 
@@ -544,6 +554,7 @@ main .wrapper-input-check img.active{
   transition: 0.5s;
   z-index: 1;
   border-right: 1px solid #000;
+  /* border: none; */
 }
 
 #mulai-tes > p {
