@@ -417,6 +417,163 @@ main .wrapper-input-check img.active{
 
 /* END MAIN */
 
+/* instruction */
+.instruction-bg {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  overflow: hidden;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: scale(0); */
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.instruction-container {
+  width: 700px;
+  height: 550px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  background-color: #fff;
+  /* backdrop-filter: blur(15px); */
+  overflow: hidden;
+  transform: scale(0);
+  animation: scaleIn 0.5s ease-in-out forwards;
+  animation-delay: .5s;
+}
+
+.instruction-container .container {
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-direction: row;
+}
+
+.container .instruction {
+  width: 700px;
+  height: 550px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  transition: .5s;
+  /* transform: translateX(-100%); */
+}
+
+.container .skip {
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  margin-right: 10px;
+  height: auto;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  opacity: .4;
+  z-index: 1;
+}
+
+.skip p {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.skip img {
+  width: 30px;
+  height: 20px;
+  filter: invert(100%);
+  transition: .5s;
+}
+
+.skip:hover img {
+  padding-left: 10px;
+}
+
+.instruction .content p {
+  max-width: 450px;
+  margin: 40px 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.content .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+.btn .button {
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+#mulai-tes {
+  position: relative;
+  line-height: 1;
+  width: auto;
+  height: 40px;
+  padding: 5px 20px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 1;
+  border-right: 1px solid #000;
+}
+
+#mulai-tes > p {
+  font-size: 18px;
+}
+
+#mulai-tes .block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  transition: 0.5s;
+  transform: translateX(100%);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+#mulai-tes:hover .block {
+  transform: translateX(0);
+}
+
+#mulai-tes:hover {
+  color: #000;
+  font-weight: 500;
+}
+/* end instruction */
+
 /* footer */
 
 footer {
@@ -451,6 +608,21 @@ footer {
   /* end footer */
 
 @media (max-width: 768px) {
+  /* responsive instruction */
+  .instruction-bg {
+    padding: 50px 20px;
+  }
+  
+  .instruction-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container .instruction {
+    width: 350px;
+  }
+  /* end responsive instruction */
+
     /* NAVBAR */
     .navbar {
         padding: 0;
@@ -650,8 +822,67 @@ footer {
   .wrapper-btn-hasil button{
     width: fit-content;
   }
-   
+  
 
 /* END MAIN */
 
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* create scaleOut animation */
+@keyframes scaleOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@keyframes fadeIn {
+  0%{
+    background-color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* create fade out animation */
+@keyframes fadeOut {
+  0%{
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  90% {
+    background-color: rgba(0, 0, 0, 0);
+    transform: scale(1);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+    transform: scale(0);
+  }
 }
