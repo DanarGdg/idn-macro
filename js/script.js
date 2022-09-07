@@ -120,7 +120,7 @@ function backToHome(){
 
 // GO TO TEST RABUN FUNCTION
 function goToTesRabun(){
-    window.location.href = 'test-rabun.html'
+    window.location.href = 'test-rabun.html?#'
 }
 
 // START TEST EVENT ON CLICK
