@@ -13,6 +13,10 @@ const body = document.querySelector('body')
 const nav = document.querySelector('nav')
 const navbarText = document.querySelectorAll('.navbar-text li')
 const arrowDown = document.querySelector('.arrow-down')
+const cursorInner = document.querySelector('.cursor-inner')
+const cursor = document.querySelector('.cursor')
+const logo = document.querySelectorAll('.logo')
+const card = document.querySelectorAll('.card')
 
 dropdown.addEventListener('click', () => {
     arrowDropdown.classList.toggle("active")
@@ -43,6 +47,45 @@ closeLogo.addEventListener('click', () => {
     logoBlack.classList.toggle('active')
     hamburgerLogo.classList.toggle('active')
     body.style.overflow = 'auto'
+})
+
+// FOLLOWING CURSOR EVENT ON MOUSEMOVE
+document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+})
+
+logo.forEach((logo) => {
+    logo.addEventListener('mouseover', () => {
+        cursor.classList.add('active')
+        cursorInner.classList.add('active')
+    })
+    logo.addEventListener('mouseout', () => {
+        cursor.classList.remove('active')
+        cursorInner.classList.remove('active')
+    })
+})
+
+navbarText.forEach((item) => {
+    item.addEventListener('mouseover', () => {
+        cursor.classList.add('active')
+        cursorInner.classList.add('active')
+    })
+    item.addEventListener('mouseout', () => {
+        cursor.classList.remove('active')
+        cursorInner.classList.remove('active')
+    })
+})
+
+card.forEach((item) => {
+    item.addEventListener('mouseover', () => {
+        cursor.classList.add('active')
+        cursorInner.classList.add('active')
+    })
+    item.addEventListener('mouseout', () => {
+        cursor.classList.remove('active')
+        cursorInner.classList.remove('active')
+    })
 })
 
 const blog1 = document.querySelector('#blog1');
