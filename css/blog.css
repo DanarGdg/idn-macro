@@ -42,6 +42,7 @@ body{
     height: 70px;
     border-radius: 100%;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .container-back .back {
@@ -167,6 +168,34 @@ body{
     height: 30px;
     margin-right: 20px;
 }
+
+.share-icons {
+    cursor: pointer;
+}
+
+.share-icons .icon-facebook {
+    transition: .5s;
+  }
+  
+  .share-icons .icon-facebook:hover {
+    transform: scale(1.5);
+  }
+  
+  .share-icons .icon-twitter {
+    transition: .5s;
+  }
+  
+  .share-icons .icon-twitter:hover {
+    transform: scale(1.5);
+  }
+  
+  .share-icons .icon-instagram {
+    transition: .5s;
+  }
+  
+  .share-icons .icon-instagram:hover {
+    transform: scale(1.5);
+  }
 
 /* footer */
 

@@ -35,6 +35,10 @@ const mulaiTes = document.querySelectorAll('.mulai-tes')
 const search = document.querySelector('.search')
 const searchClose = document.querySelector('#search-close')
 const searchInput = document.querySelector('.search input')
+const iconFacebook = document.querySelectorAll('.icon-facebook')
+const iconTwitter = document.querySelectorAll('.icon-twitter')
+const iconInstagram = document.querySelectorAll('.icon-instagram')
+const load = document.querySelector('.loadOut')
 
 let titleBlog = document.querySelectorAll('.title-blog')
 
@@ -90,7 +94,12 @@ window.addEventListener('scroll', function() {
 
 // BLOG NAVBAR EVENT ON CLICK
 blog.addEventListener('click', () => {
-    window.location.href = 'all-blog.html'
+    // delay click to all-blog.html
+    setTimeout(function(){
+        window.location.href = 'all-blog.html'
+    }, 1500)
+    // loadOut animation
+    load.style.animation = 'loadOut forwards .5s ease-out'
 })
 
 // BLOG1 EVENT ON CLICK
@@ -303,6 +312,45 @@ searchInput.addEventListener('keyup', (e) => {
         }
     }
 })
+
+// if iconFacebook click open https://www.facebook.com/ in new tab
+iconFacebook.forEach(iconFacebook => {
+    iconFacebook.addEventListener('click', () => {
+        window.open('https://www.facebook.com/sharer/sharer.php?u=' + window.location.href, '_blank')
+        // dont open card
+        event.stopPropagation()
+    })
+})
+
+// if iconTwitter click open https://twitter.com/ in new tab
+iconTwitter.forEach(iconTwitter => {
+    iconTwitter.addEventListener('click', () => {
+        window.open('https://twitter.com/intent/tweet?url=' + window.location.href, '_blank')
+        // dont open card
+        event.stopPropagation()
+    })
+})
+
+// if iconInstagram click open https://www.instagram.com/ in new tab
+iconInstagram.forEach(iconInstagram => {
+    iconInstagram.addEventListener('click', () => {
+        window.open('https://www.instagram.com/?url=' + window.location.href, '_blank')
+        // dont open card
+        event.stopPropagation()
+    })
+})
+
+function shareFacebook() {
+    window.open('https://www.facebook.com/sharer/sharer.php?u=' + window.location.href, '_blank')
+}
+
+function shareTwitter() {
+    window.open('https://twitter.com/intent/tweet?url=' + window.location.href, '_blank')
+}
+
+function shareInstagram() {
+    window.open('https://www.instagram.com/?url=' + window.location.href, '_blank')
+}
 
 // const body = document.body,
 // scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
