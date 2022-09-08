@@ -90,6 +90,10 @@ header {
   cursor: pointer;
 }
 
+.logo img:nth-child(2){
+  display: none;
+}
+
 .hero-text {
   height: 100%;
   display: flex;

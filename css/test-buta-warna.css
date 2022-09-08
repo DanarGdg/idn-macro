@@ -14,7 +14,7 @@
 /* END SCROLLBAR */
 
 body {
-  overflow-x: hidden; 
+  /* overflow-x: hidden;  */
 }
 
 /* NAVBAR */
@@ -177,10 +177,10 @@ body {
 }
 
 .navbar-text-mobile {
-  display: flex;
+  display: none;
   height: 100vh;
   width: 100vw;
-  background-color: #2b2d42;
+  background-color: #000;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -505,6 +505,10 @@ footer {
 
 @media (max-width: 768px) {
     /* NAVBAR */
+  .body{
+    overflow-x: hidden;
+  }
+
     .navbar {
         padding: 0;
         z-index: 999;
@@ -558,6 +562,10 @@ footer {
       .navbar-text {
         display: none;
       }
+
+      .navbar-text-mobile{
+        display: flex;
+      }
     
       .navbar-text-mobile.active {
         transform: translateY(0);
@@ -577,7 +585,13 @@ footer {
     /* END NAVBAR */
 
     /* MAIN */    
+
+    .wrapper-soals-lg{
+      width: 100%;
+    }
+
     .wrapper-soal{
+      width: 100vw;
       flex-direction: column;
       padding: 0;
       height: fit-content;
