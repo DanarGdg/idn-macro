@@ -13,7 +13,6 @@
 
 body {
   overflow-x: hidden;
-  /* overflow: hidden; */
 }
 
 /* NAVBAR */
@@ -89,7 +88,6 @@ body {
 .arrow-down {
   transition: all .5s ease-in-out;
   margin-left: 1rem;
-  /* filter: invert(100%); */
   height: 15px;
   width: 15px;
 }
@@ -181,7 +179,7 @@ body {
   display: none;
   height: 100vh;
   width: 100vw;
-  background-color: #2b2d42;
+  background-color: #000;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -272,7 +270,7 @@ main{
   margin: 0 1rem;
 }
 
-form{
+.form{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -280,12 +278,12 @@ form{
   z-index: -1;
 }
 
-form input:nth-child(3){
+.form input:nth-child(3){
   position: absolute;
   opacity: 0;
 }
 
-form .error-input, form .error-input-mobile{
+.form .error-input, .form .error-input-mobile{
   width: 181px;
   height: 44px;
   position: absolute;
@@ -296,11 +294,11 @@ form .error-input, form .error-input-mobile{
   transition: opacity .2s ease-in-out;
 }
 
-form .error-input-mobile{
+.form .error-input-mobile{
   transform: translate(-37%, 100%);
 }
 
-form .error-input.active{
+.form .error-input.active{
   opacity: 1;
 }
 
@@ -324,7 +322,6 @@ form .error-input.active{
 }
 
 .wrapper-btn-test-selesai button a, .wrapper-btn-hasil button a{
-  /* color: white; */
   text-decoration: none;
 }
 
@@ -451,7 +448,6 @@ main .wrapper-input-check img.active{
 }
 
 .btn-lanjut{
-  /* width: 114px; */
   margin: 0 auto;
 }
 
@@ -484,7 +480,6 @@ main .wrapper-input-check img.active{
   flex-direction: row;
   position: relative;
   background-color: #fff;
-  /* backdrop-filter: blur(15px); */
   overflow: hidden;
   transform: scale(0);
   animation: scaleIn 0.5s ease-in-out forwards;
@@ -507,9 +502,8 @@ main .wrapper-input-check img.active{
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 10px;
+  /* padding: 10px; */
   transition: .5s;
-  /* transform: translateX(-100%); */
 }
 
 .container .skip {
@@ -584,8 +578,6 @@ main .wrapper-input-check img.active{
   transition: 0.5s;
   z-index: 1;
   border-right: 1px solid #000;
-  /* margin: 0 1rem; */
-  /* border: none; */
 }
 
 #mulai-tes > p {
@@ -777,19 +769,18 @@ footer {
     transform: translateX(20%);
 }
 
-  form .error-input{
+  .form .error-input{
     width: 181px;
     height: 44px;
   }
 
-  form .error-input.active{
+  .form .error-input.active{
     opacity: 0;
     display: none;
   }
 
-  form .error-input-mobile.active{
+  .form .error-input-mobile.active{
     opacity: 1;
-    /* transform: translate(-35%, 100%); */
     transform: translate(-37%, 100%);
     z-index: 1000;
   }

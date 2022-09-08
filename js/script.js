@@ -35,6 +35,10 @@ const mulaiTes = document.querySelectorAll('.mulai-tes')
 const search = document.querySelector('.search')
 const searchClose = document.querySelector('#search-close')
 const searchInput = document.querySelector('.search input')
+const iconFacebook = document.querySelectorAll('.icon-facebook')
+const iconTwitter = document.querySelectorAll('.icon-twitter')
+const iconInstagram = document.querySelectorAll('.icon-instagram')
+const load = document.querySelector('.loadOut')
 
 let titleBlog = document.querySelectorAll('.title-blog')
 
@@ -90,7 +94,12 @@ window.addEventListener('scroll', function() {
 
 // BLOG NAVBAR EVENT ON CLICK
 blog.addEventListener('click', () => {
-    window.location.href = 'all-blog.html'
+    // delay click to all-blog.html
+    setTimeout(function(){
+        window.location.href = 'all-blog.html'
+    }, 1500)
+    // loadOut animation
+    load.style.animation = 'loadOut forwards .5s ease-out'
 })
 
 // BLOG1 EVENT ON CLICK
@@ -276,50 +285,45 @@ searchClose.addEventListener('mouseout', () => {
     cursorInner.classList.remove('active')
 })
 
-// create array titleBlog innerHTML
-let title = []
-for (let i = 0; i < titleBlog.length; i++) {
-    title.push(titleBlog[i].innerHTML)
+function goToTesButaWarna(){
+    window.location.href = 'test-buta-warna.html'
 }
 
-console.log(title)
-
-// regex search
-
-
-// get value searchInput if enter pressed
-searchInput.addEventListener('keyup', (e) => {
-    if (e.keyCode === 13) {
-        let searchValue = searchInput.value
-        let regex = new RegExp(searchValue, 'gi')
-        for (let i = 0; i < title.length; i++) {
-            if (title[i].match(regex)) {
-                // scroll to title[i]
-                titleBlog[i].scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'center'
-                })
-            }
-        }
-    }
+// if iconFacebook click open https://www.facebook.com/ in new tab
+iconFacebook.forEach(iconFacebook => {
+    iconFacebook.addEventListener('click', () => {
+        window.open('https://www.facebook.com/sharer/sharer.php?u=' + window.location.href, '_blank')
+        // dont open card
+        event.stopPropagation()
+    })
 })
 
-// const body = document.body,
-// scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
-// height = scrollWrap.getBoundingClientRect().height - 1,
-// speed = 0.05;
+// if iconTwitter click open https://twitter.com/ in new tab
+iconTwitter.forEach(iconTwitter => {
+    iconTwitter.addEventListener('click', () => {
+        window.open('https://twitter.com/intent/tweet?url=' + window.location.href, '_blank')
+        // dont open card
+        event.stopPropagation()
+    })
+})
 
-// var offset = 0;
+// if iconInstagram click open https://www.instagram.com/ in new tab
+iconInstagram.forEach(iconInstagram => {
+    iconInstagram.addEventListener('click', () => {
+        window.open('https://www.instagram.com/?url=' + window.location.href, '_blank')
+        // dont open card
+        event.stopPropagation()
+    })
+})
 
-// body.style.height = Math.floor(height) + "px";
+function shareFacebook() {
+    window.open('https://www.facebook.com/sharer/sharer.php?u=' + window.location.href, '_blank')
+}
 
-// function smoothScroll() {
-//     offset += (window.pageYOffset - offset) * speed;
+function shareTwitter() {
+    window.open('https://twitter.com/intent/tweet?url=' + window.location.href, '_blank')
+}
 
-//     var scroll = "translateY(-" + offset + "px) translateZ(0)";
-//     scrollWrap.style.transform = scroll;
-
-//     callScroll = requestAnimationFrame(smoothScroll);
-// }
-
-// smoothScroll();
+function shareInstagram() {
+    window.open('https://www.instagram.com/?url=' + window.location.href, '_blank')
+}

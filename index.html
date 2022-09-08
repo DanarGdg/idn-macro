@@ -9,6 +9,7 @@
     <link rel="icon" href="/assets/icons/iconWeb.svg">
 </head>
 <body class="smooth-scroll-wrapper">
+    <div class="loadOut"></div>
     <!-- CURSOR -->
     <div class="cursor">
         <div class="cursor-inner"></div>
@@ -31,8 +32,8 @@
                         <img class="arrow-down" src="assets/icons/arrow-down.svg" alt="arrow down logo">
                     </button>
                     <div class="dropdown-content">
-                        <a href="test-rabun.html?#">Tes Rabun</a>
-                        <a href="#">Tes Buta Warna</a>
+                        <a href="test-rabun.html">Test Rabun</a>
+                        <a href="test-buta-warna.html">Test Buta Warna</a>
                     </div>
                 </li>
             </ul>
@@ -59,8 +60,8 @@
         <ul class="navbar-text-mobile">
             <li><a href="/index.html">Beranda</a></li>
             <li><a href="/all-blog.html">Blog</a></li>
-            <li><a href="#">Tes Rabun</a></li>
-            <li><a href="#">Tes Buta Warna</a></li>
+            <li><a href="/test-rabun.html">Tes Rabun</a></li>
+            <li><a href="/test-buta-warna.html">Tes Buta Warna</a></li>
         </ul>
     </nav>
     <header>
@@ -134,7 +135,7 @@
                         <img src="/assets/images/tes-buta-warna.png" alt="">
                     </div>
                     <h1>Tes Buta Warna</h1>
-                    <div class="mulai-tes">
+                    <div class="mulai-tes" onclick="goToTesButaWarna()">
                         <p>Mulai Tes</p>
                         <div class="block"></div>
                     </div>
@@ -149,8 +150,8 @@
         <h1>BLOG</h1>
 
         <div class="wrap-card">
-            <div class="card">
-                <div class="wrap-img-card" id="blog1">
+            <div class="card" id="blog1">
+                <div class="wrap-img-card">
                     <img src="assets/images/blog-img1.png" alt="blog image">
                 </div>
 
@@ -165,14 +166,14 @@
                 </div>
 
                 <div class="detail-blog hover-detail-blog">
-                    <img src="/assets/icons/icon-facebook.svg" alt="icon facebook">
-                    <img src="/assets/icons/icon-twitter.svg" alt="icon twitter">
-                    <img src="/assets/icons/icon-instagram.svg" alt="icon">
+                    <img src="/assets/icons/icon-facebook.svg" alt="icon facebook" class="icon-facebook">
+                    <img src="/assets/icons/icon-twitter.svg" alt="icon twitter"  class="icon-twitter">
+                    <img src="/assets/icons/icon-instagram.svg" alt="icon" class="icon-instagram">
                 </div>
             </div>
 
-            <div class="card">
-                <div class="wrap-img-card" id="blog2">
+            <div class="card" id="blog2">
+                <div class="wrap-img-card">
                     <img src="assets/images/blog-img2.png" alt="blog image">
                 </div>
 
@@ -187,14 +188,14 @@
                 </div>
 
                 <div class="detail-blog hover-detail-blog">
-                    <img src="/assets/icons/icon-facebook.svg" alt="icon facebook">
-                    <img src="/assets/icons/icon-twitter.svg" alt="icon twitter">
-                    <img src="/assets/icons/icon-instagram.svg" alt="icon">
+                    <img src="/assets/icons/icon-facebook.svg" alt="icon facebook" class="icon-facebook">
+                    <img src="/assets/icons/icon-twitter.svg" alt="icon twitter" class="icon-twitter">
+                    <img src="/assets/icons/icon-instagram.svg" alt="icon" class="icon-instagram">
                 </div>
             </div>
 
-            <div class="card">
-                <div class="wrap-img-card" id="blog3">
+            <div class="card" id="blog3">
+                <div class="wrap-img-card">
                     <img src="assets/images/blog-img3.png" alt="blog image">
                 </div>
 
@@ -209,9 +210,9 @@
                 </div>
 
                 <div class="hover-detail-blog">
-                    <img src="/assets/icons/icon-facebook.svg" alt="icon facebook">
-                    <img src="/assets/icons/icon-twitter.svg" alt="icon twitter">
-                    <img src="/assets/icons/icon-instagram.svg" alt="icon">
+                    <img src="/assets/icons/icon-facebook.svg" alt="icon facebook" class="icon-facebook">
+                    <img src="/assets/icons/icon-twitter.svg" alt="icon twitter" class="icon-twitter">
+                    <img src="/assets/icons/icon-instagram.svg" alt="icon" class="icon-instagram">
                 </div>
             </div>
         </div>
