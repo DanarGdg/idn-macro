@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MACRO</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/assets/icons/iconWeb.svg">
 </head>
 <body class="smooth-scroll-wrapper">
+    <!-- CURSOR -->
+    <div class="cursor">
+        <div class="cursor-inner"></div>
+    </div>
+    <!-- END CURSOR -->
+
     <!-- HEADER -->
     <nav class="navbar scrolling-active">
         <div class="logo">
@@ -17,10 +24,10 @@
 
         <div class="navbar-right">
             <ul class="navbar-text">
-                <li class="li" id="home" onclick="backToHome()">Home</li>
+                <li class="li" id="home" onclick="backToHome()">Beranda</li>
                 <li class="li" id="blog">Blog</li>
                 <li class="dropdown"> 
-                    <button class="dropbtn">Test Mata
+                    <button class="dropbtn">Tes Mata
                         <img class="arrow-down" src="assets/icons/arrow-down.svg" alt="arrow down logo">
                     </button>
                     <div class="dropdown-content">
@@ -29,10 +36,16 @@
                     </div>
                 </li>
             </ul>
+            
+            <div class="search">
+                <input type="text" name="" id="search" placeholder="Search...">
+                <img src="assets/icons/close-btn.svg" alt="" id="search-close">
+            </div>
 
             <div class="search-logo">
                 <img src="assets/icons/search.svg" alt="search logo">
             </div>
+
 
             <div class="hamburger-logo">
                 <img src="assets/icons/hamburger.svg" alt="hamburger logo">
@@ -44,22 +57,30 @@
         </div>
 
         <ul class="navbar-text-mobile">
-            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html">Beranda</a></li>
             <li><a href="/all-blog.html">Blog</a></li>
-            <li><a href="#">Test Rabun</a></li>
-            <li><a href="#">Test Buta Warna</a></li>
+            <li><a href="#">Tes Rabun</a></li>
+            <li><a href="#">Tes Buta Warna</a></li>
         </ul>
     </nav>
     <header>
         <div class="hero-text">
-            <h1>PERIKSA MATAMU <br> SEKARANG !</h1>
-            <p>Website ini hanya digunakan untuk mengetes mata secara <br> online tidak menggantikan saran dari dokter.</p>
+            <h1>PERIKSA PENGLIHATANMU <br> SEKARANG !</h1>
+            <p>Website ini hanya digunakan untuk tes mata secara online <br> tidak menggantikan saran dari dokter.</p>
+        </div>
+        <div class="scroll-container">
+            <p>Mulai Sekarang</p>
+            <div class="scroll-bg">
+                <div class="circle"></div>
+            </div>
+            <div class="arrow">
+                <img src="/assets/icons/arrow-down.svg" alt="">
+            </div>
         </div>
     </header>
-
     <!-- END HEADER -->
 
-    <!-- explanation -->
+    <!-- EXPLANATION -->
     <div class="explanation">
         <div class="explanatory-text">
             <h1>Mengapa harus periksa mata?</h1>
@@ -71,10 +92,10 @@
             </div>
         </div>
     </div>
-    <!-- end explanation -->
+    <!-- END EXPLANATION -->
 
-    <!-- start test -->
-    <div class="start-test">
+    <!-- START TEST -->
+    <div class="start-test" id="start-test">
         <div class="test-text">
             <h1>Seberapa baik anda melihat?</h1>
         </div>
@@ -89,9 +110,9 @@
             </button>
         </div>
     </div>
-    <!-- end test -->
+    <!-- END START TEST -->
 
-    <!-- pop up test -->
+    <!-- POPUP TEST -->
     <div class="pop-up-container" id="popup">
         <div class="pop-up" id="popupMain">
             <div class="close">
@@ -121,7 +142,7 @@
             </div>
         </div>
     </div>
-    <!-- end pop up test -->
+    <!-- END POPUP TEST -->
 
     <!-- BLOG -->
     <div class="blog">
@@ -133,7 +154,7 @@
                     <img src="assets/images/blog-img1.png" alt="blog image">
                 </div>
 
-                <p>Menjaga Kesehatan Mata di Era Pandemi</p>
+                <p class="title-blog">Menjaga Kesehatan Mata di Era Pandemi</p>
 
                 <div class="detail-blog">
                     <p>04-08-22</p>
@@ -155,7 +176,7 @@
                     <img src="assets/images/blog-img2.png" alt="blog image">
                 </div>
 
-                <p>Tips Menjaga Kesehatan Mata selama Daring di Masa Pandemi </p>
+                <p class="title-blog">Tips Menjaga Kesehatan Mata selama Daring di Masa Pandemi </p>
 
                 <div class="detail-blog">
                     <p>05-07-22</p>
@@ -177,7 +198,7 @@
                     <img src="assets/images/blog-img3.png" alt="blog image">
                 </div>
 
-                <p>Strategi Menjaga Kesehatan Mata dari Layar Digital di Tengah Pandemi Covid-19</p>
+                <p class="title-blog">Strategi Menjaga Kesehatan Mata dari Layar Digital di Tengah Pandemi Covid-19</p>
 
                 <div class="detail-blog">
                     <p>22-11-22</p>
@@ -197,14 +218,17 @@
     </div>
     <!-- END BLOG -->
 
-    <!-- footer -->
+    <!-- FOOTER -->
     <footer>
         <div class="footer-text">
-            <img src="/assets/icons/logo.svg" alt="">
+            <img src="/assets/icons/logo.svg" alt="" class="logo">
             <p>Copyright © 2022 Macro Team</p>
         </div>
     </footer>
-    <!-- end footer -->
+    <!-- END FOOTER -->
+
+    <!-- SCRIPT JS -->
     <script src="js/script.js"></script>
+    <!-- END SCRIPT JS -->
 </body>
 </html>

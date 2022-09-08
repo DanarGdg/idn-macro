@@ -7,6 +7,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -137,6 +141,7 @@ body {
 
 .hamburger-logo {
   opacity: 0;
+  display: none;
   margin-left: 1rem;
   transition: ease-in-out transform 0.2s;
   transform: scale(1);
@@ -146,6 +151,10 @@ body {
   transform: scale(0);
   opacity: 0;
   padding: 1rem 1rem 0 0;
+}
+
+.search-logo {
+  display: none;
 }
 
 .search-logo img {
@@ -167,7 +176,7 @@ body {
 }
 
 .navbar-text-mobile {
-  display: flex;
+  display: none;
   height: 100vh;
   width: 100vw;
   background-color: #2b2d42;
@@ -357,8 +366,9 @@ main{
   font-size: 2.25em;
 }
 
-.hasil h1{
-  font-size: 3em;
+.hasil h1{  
+  line-height: 1.5;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -572,6 +582,7 @@ main .wrapper-input-check img.active{
 
 #mulai-tes > p {
   font-size: 18px;
+  font-style: normal;
 }
 
 #mulai-tes .block {
@@ -669,6 +680,10 @@ footer {
       .logo img:nth-child(1).active {
         display: none;
       }
+
+      .navbar-text-mobile {
+        display: flex;
+      }
     
       .navbar-right {
         padding: 1rem 1rem 0 0;
@@ -688,6 +703,7 @@ footer {
     
       .hamburger-logo {
         opacity: 1;
+        display: initial;
       }
     
       .close-logo.active {
@@ -771,7 +787,7 @@ footer {
 
   .test-rabun{
     opacity: 1;
-    z-index: 999;
+    z-index: 1;
   }
 
   .test-rabun h1{
@@ -826,7 +842,7 @@ footer {
   }
 
   .hasil h1{
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: center;
   }
 

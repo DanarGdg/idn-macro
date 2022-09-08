@@ -109,9 +109,9 @@ let mobileMediaQuery = window.matchMedia("(max-width: 700px)")
 btnLanjut.addEventListener('submit', btnLanjutHandling)
 
 function sizingTestCharacter(){
-    decrement += 0.28
+    decrement += 0.31;
     if(mobileMediaQuery.matches){
-        size = 1.5
+        size = 1.5  
         testCharacter.style.fontSize = `${size - decrement}em`
     }else{
         testCharacter.style.fontSize = `${size - decrement}em`
