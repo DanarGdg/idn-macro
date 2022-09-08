@@ -60,7 +60,6 @@ window.addEventListener('scroll', function() {
     })
 })
 
-// if id blog1 clicked then show blog1.html
 const blog1 = document.querySelector('#blog1');
 const blog2 = document.querySelector('#blog2');
 const blog3 = document.querySelector('#blog3');
@@ -89,7 +88,7 @@ blog.addEventListener('click', () => {
 function backToHome(){
     window.location.href = 'index.html'
 }
-// if .start clicked #popup transform scale to 1
+
 const start = document.querySelector('.start');
 const popupBg = document.querySelector('#popup');
 const popup = document.querySelector('#popupMain');
@@ -114,22 +113,6 @@ function goToTesRabun(){
     window.location.href = 'test-rabun.html'
 }
 
-// const body = document.body,
-// scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
-// height = scrollWrap.getBoundingClientRect().height - 1,
-// speed = 0.05;
-
-// var offset = 0;
-
-// body.style.height = Math.floor(height) + "px";
-
-// function smoothScroll() {
-//     offset += (window.pageYOffset - offset) * speed;
-
-//     var scroll = "translateY(-" + offset + "px) translateZ(0)";
-//     scrollWrap.style.transform = scroll;
-
-//     callScroll = requestAnimationFrame(smoothScroll);
-// }
-
-// smoothScroll();
+function goToTesButaWarna(){
+    window.location.href = 'test-buta-warna.html'
+}
