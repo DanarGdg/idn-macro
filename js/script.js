@@ -285,12 +285,45 @@ searchClose.addEventListener('mouseout', () => {
     cursorInner.classList.remove('active')
 })
 
-// create array titleBlog innerHTML
-let title = []
-for (let i = 0; i < titleBlog.length; i++) {
-    title.push(titleBlog[i].innerHTML)
-}
-
 function goToTesButaWarna(){
     window.location.href = 'test-buta-warna.html'
+}
+
+// if iconFacebook click open https://www.facebook.com/ in new tab
+iconFacebook.forEach(iconFacebook => {
+    iconFacebook.addEventListener('click', () => {
+        window.open('https://www.facebook.com/sharer/sharer.php?u=' + window.location.href, '_blank')
+        // dont open card
+        event.stopPropagation()
+    })
+})
+
+// if iconTwitter click open https://twitter.com/ in new tab
+iconTwitter.forEach(iconTwitter => {
+    iconTwitter.addEventListener('click', () => {
+        window.open('https://twitter.com/intent/tweet?url=' + window.location.href, '_blank')
+        // dont open card
+        event.stopPropagation()
+    })
+})
+
+// if iconInstagram click open https://www.instagram.com/ in new tab
+iconInstagram.forEach(iconInstagram => {
+    iconInstagram.addEventListener('click', () => {
+        window.open('https://www.instagram.com/?url=' + window.location.href, '_blank')
+        // dont open card
+        event.stopPropagation()
+    })
+})
+
+function shareFacebook() {
+    window.open('https://www.facebook.com/sharer/sharer.php?u=' + window.location.href, '_blank')
+}
+
+function shareTwitter() {
+    window.open('https://twitter.com/intent/tweet?url=' + window.location.href, '_blank')
+}
+
+function shareInstagram() {
+    window.open('https://www.instagram.com/?url=' + window.location.href, '_blank')
 }
