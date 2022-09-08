@@ -13,6 +13,40 @@ const body = document.querySelector('body')
 const nav = document.querySelector('nav')
 const navbarText = document.querySelectorAll('.navbar-text li')
 const arrowDown = document.querySelector('.arrow-down')
+const cursorInner = document.querySelector('.cursor-inner')
+const cursor = document.querySelector('.cursor')
+const logo = document.querySelectorAll('.logo')
+const card = document.querySelectorAll('.card')
+const iconFacebook = document.querySelectorAll('.icon-facebook')
+const iconTwitter = document.querySelectorAll('.icon-twitter')
+const iconInstagram = document.querySelectorAll('.icon-instagram')
+
+// if iconFacebook click open https://www.facebook.com/ in new tab
+iconFacebook.forEach(iconFacebook => {
+    iconFacebook.addEventListener('click', () => {
+        window.open('https://www.facebook.com/sharer/sharer.php?u=' + window.location.href, '_blank')
+        // dont open card
+        event.stopPropagation()
+    })
+})
+
+// if iconTwitter click open https://twitter.com/ in new tab
+iconTwitter.forEach(iconTwitter => {
+    iconTwitter.addEventListener('click', () => {
+        window.open('https://twitter.com/intent/tweet?url=' + window.location.href, '_blank')
+        // dont open card
+        event.stopPropagation()
+    })
+})
+
+// if iconInstagram click open https://www.instagram.com/ in new tab
+iconInstagram.forEach(iconInstagram => {
+    iconInstagram.addEventListener('click', () => {
+        window.open('https://www.instagram.com/?url=' + window.location.href, '_blank')
+        // dont open card
+        event.stopPropagation()
+    })
+})
 
 dropdown.addEventListener('click', () => {
     arrowDropdown.classList.toggle("active")
@@ -43,6 +77,45 @@ closeLogo.addEventListener('click', () => {
     logoBlack.classList.toggle('active')
     hamburgerLogo.classList.toggle('active')
     body.style.overflow = 'auto'
+})
+
+// FOLLOWING CURSOR EVENT ON MOUSEMOVE
+document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+})
+
+logo.forEach((logo) => {
+    logo.addEventListener('mouseover', () => {
+        cursor.classList.add('active')
+        cursorInner.classList.add('active')
+    })
+    logo.addEventListener('mouseout', () => {
+        cursor.classList.remove('active')
+        cursorInner.classList.remove('active')
+    })
+})
+
+navbarText.forEach((item) => {
+    item.addEventListener('mouseover', () => {
+        cursor.classList.add('active')
+        cursorInner.classList.add('active')
+    })
+    item.addEventListener('mouseout', () => {
+        cursor.classList.remove('active')
+        cursorInner.classList.remove('active')
+    })
+})
+
+card.forEach((item) => {
+    item.addEventListener('mouseover', () => {
+        cursor.classList.add('active')
+        cursorInner.classList.add('active')
+    })
+    item.addEventListener('mouseout', () => {
+        cursor.classList.remove('active')
+        cursorInner.classList.remove('active')
+    })
 })
 
 const blog1 = document.querySelector('#blog1');

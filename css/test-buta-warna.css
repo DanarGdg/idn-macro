@@ -7,6 +7,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  display: none;
+}
+/* END SCROLLBAR */
+
 body {
   overflow-x: hidden; 
 }
@@ -146,6 +152,10 @@ body {
   transform: scale(0);
   opacity: 0;
   padding: 1rem 1rem 0 0;
+}
+
+.search-logo {
+  display: none;
 }
 
 .search-logo img {
