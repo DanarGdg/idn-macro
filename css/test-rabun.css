@@ -296,7 +296,6 @@ main{
   top: 0;
   transform: translate(75%, -100%);
   opacity: 0;
-  transition: opacity .2s ease-in-out;
 }
 
 .form .error-input-mobile{
@@ -304,6 +303,7 @@ main{
 }
 
 .form .error-input.active{
+  transition: opacity .5s ease-in-out;
   opacity: 1;
 }
 
@@ -313,7 +313,6 @@ main{
     position: absolute;
     top: 50%; right: 50%;
     transform: translate(50%,-50%);
-    transition: all .5s ease-in-out;
 }
 
 .test-selesai img{
@@ -335,6 +334,7 @@ main{
 }
 
 .test-selesai.active{
+    transition: opacity .5s ease-in-out;
     opacity: 1;
     position: relative;
     z-index: 1;
@@ -383,7 +383,6 @@ main{
   position: absolute;
   top: 50%; right: 50%;
   transform: translate(50%,-60%);
-  transition: all .5s ease-in-out;
 }
 
 .hasil-bagus h1{
@@ -399,6 +398,7 @@ main{
 }
 
 .hasil-lumayan.active, .hasil-bagus.active , .hasil-buruk.active{
+  transition: opacity .5s ease-in-out;
   opacity: 1;
   position: relative;
   z-index: 1;
@@ -416,7 +416,7 @@ main .list-circle li{
     background-color: #E2E2E2;
     list-style: none;
     margin: 0 .5rem;
-    transition: background-color .2s ease-in-out;
+    transition: background-color .5s ease-in-out;
 }
 
 main .list-circle li.active{
@@ -445,10 +445,10 @@ main .wrapper-input-check img{
     position: absolute;
     right: 0;
     transform: translateX(120%);
-    transition: all 0.2s ease-in-out;
 }
 
 main .wrapper-input-check img.active{
+  transition: all 0.5s ease-in-out;
     opacity: 1;
 }
 
@@ -800,6 +800,7 @@ footer {
   }
 
   .form .error-input-mobile.active{
+    transition: opacity .5s ease-in-out;
     opacity: 1;
     transform: translate(-37%, 100%);
     z-index: 1000;

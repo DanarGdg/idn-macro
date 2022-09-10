@@ -1026,6 +1026,17 @@ footer {
   }
   /* END BLOG MOBILE */
 
+  /* CUROSR MOBILE*/
+  .cursor {
+    display: none;
+  }
+  
+  .cursor-inner {
+    display: none;
+  }
+  
+  /* END CURSOR MOBILE */
+  
   /* FOOTER MOBILE */
   footer {
     height: 100px;

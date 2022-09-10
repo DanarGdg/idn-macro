@@ -244,7 +244,7 @@ header {
 }
 
 .navbar-text-mobile {
-  display: flex;
+  display: none;
   height: 100vh;
   width: 100vw;
   background-color: #000;
@@ -501,6 +501,10 @@ footer {
     display: none;
   }
 
+  .navbar-text-mobile{
+    display: flex;
+  }
+
   .navbar-text-mobile.active {
     transform: translateY(0);
   }
@@ -533,6 +537,17 @@ footer {
   .card .detail-blog {
     padding: 0 1rem;
   }
+
+  /* CUROSR MOBILE*/
+  .cursor {
+    display: none;
+  }
+  
+  .cursor-inner {
+    display: none;
+  }
+  
+  /* END CURSOR MOBILE */
 
   /* RESPONSIVE FOOTER */
 
