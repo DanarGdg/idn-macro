@@ -377,6 +377,14 @@ main{
   color: #FF0000;
 }
 
+#btn-submit {
+  border-right: 1px solid #000;
+}
+
+#btn-lanjut {
+  border-right: 1px solid #000;
+}
+
 .mulai-tes, .mulai-tes-lanjut {
   position: relative;
   line-height: 1;
@@ -392,7 +400,6 @@ main{
   cursor: pointer;
   transition: 0.5s;
   z-index: 1;
-  border-right: 1px solid #000;
 }
 
 .mulai-tes .block {
@@ -403,7 +410,6 @@ main{
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   border-left: 1px solid #000;
-  border-right: 1px solid #000;
   transition: 0.5s;
   transform: translateX(100%);
   z-index: -1;
