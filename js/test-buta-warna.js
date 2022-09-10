@@ -74,14 +74,20 @@ btnLanjut.addEventListener('click', () => {
             soal.style.transform = `translateX(-${0 - position}%)`
         })
     }else{
-        btnLanjut.disabled = true;
-        btnLanjut.classList.remove('active')
-        position += -100;
-        num++
-        soalKeBerapa.innerText = `${num} dari 8 kuis`
-        soals.forEach(soal => {
-            soal.style.transform = `translateX(-${0 - position}%)`
-        })
+      btnLanjut.disabled = true;
+      btnLanjut.classList.remove('active')
+      position += -100;
+      num++
+      soalKeBerapa.innerText = `${num} dari 8 kuis`
+      soals.forEach(soal => {
+        soal.style.transform = `translateX(-${0 - position}%)`
+      })
+      for (let i = 0; i < inputTest.length; i++) {
+        const element = inputTest[i];
+        if(element.checked){
+          element.checked = false;
+        }
+      }
     }
 
     if(num == 8){
