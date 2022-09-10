@@ -463,7 +463,7 @@ main .wrapper-input-check img.active{
   left: 0;
   z-index: 999;
   overflow: hidden;
-  padding: 100px;
+  padding: 100px ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -502,7 +502,7 @@ main .wrapper-input-check img.active{
   align-items: center;
   flex-direction: column;
   text-align: center;
-  /* padding: 10px; */
+  padding: 10px;
   transition: .5s;
 }
 
