@@ -98,7 +98,6 @@ btnSubmit.addEventListener('click', () => {
     if(element.checked){
       btnLanjut.classList.add('active')
       btnLanjut.disabled = false;
-      console.log(element.value);
       checkLogo[num - 1].classList.add('active')
 
       if (element.value == myQuestions[num - 1].correctAnswer) {
@@ -145,7 +144,6 @@ function mengulagiTest(){
   })
   btnLanjut.classList.remove('active');
   btnLanjut.disabled = true;
-  console.log(num);
 
   hasilBagusBanget.classList.remove('active')
   hasilBagus.classList.remove('active')
@@ -155,11 +153,16 @@ function mengulagiTest(){
 
   for (let i = 0; i < inputTest.length; i++) {
     const element = inputTest[i];
+    console.log(element);
     element.checked = false;
-    jawaban[i].classList.remove('benar');
-    jawaban[i].classList.remove('salah');
-    jawaban[i].innerText = "Jawaban Anda Benar";
-    checkLogo[i].classList.remove('active')
+    jawaban.forEach(jawab => {
+      jawab.classList.remove('benar')
+      jawab.classList.remove('salah')
+      jawab.innerText = "Jawaban Anda Benar"
+    })
+    checkLogo.forEach(logo => {
+      logo.classList.remove('active')
+    })
   }
 }
 

@@ -331,6 +331,7 @@ header {
 }
 
 .hamburger-logo {
+  cursor: pointer;
   opacity: 0;
   display: none;
   margin-left: 1rem;
@@ -360,6 +361,7 @@ header {
 }
 
 .close-logo {
+  cursor: pointer;
   opacity: 0;
   width: 0;
   height: 0;

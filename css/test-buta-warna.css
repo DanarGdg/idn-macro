@@ -146,6 +146,7 @@ body {
 }
 
 .hamburger-logo {
+  cursor: pointer;
   opacity: 0;
   margin-left: 1rem;
   transition: ease-in-out transform 0.2s;
@@ -173,6 +174,7 @@ body {
 }
 
 .close-logo {
+  cursor: pointer;
   opacity: 0;
   width: 0;
   height: 0;
