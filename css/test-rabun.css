@@ -34,6 +34,10 @@ body {
   color: black;
 }
 
+.logo {
+  cursor: pointer;
+}
+
 .logo img:nth-child(2) {
   display: none;
 }

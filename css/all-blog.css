@@ -18,32 +18,11 @@ body {
   background-color: #fff;
 }
 
-.loadIn {
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(85, 85, 85);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 999999;
-  transform: translateX(100%);
-  animation: loadIn .5s ease-in;
-}
-
-@keyframes loadIn {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-
 /* CURSOR */
 .cursor {
   position: fixed;
-  width: 10px;
-  height: 10px;
+  width: 0;
+  height: 0;
   border-radius: 50%;
   background-color: #fff;
   transform: translate(-50%, -50%);
@@ -54,20 +33,20 @@ body {
 }
 
 .cursor.active {
-  /* width: 10px; */
-  /* height: 10px; */
+  width: 10px;
+  height: 10px;
   transform: scale(7);
   /* border-radius: 0%; */
 }
 
 .cursor-inner {
-  width: 30px;
-  height: 30px;
+  /* width: 30px; */
+  /* height: 30px; */
   border-radius: 50%;
   transform: translate(-35%, -35%);
   border: 1px solid #fff;
   transition-delay: 0.1s;
-  opacity: 0.2;
+  opacity: 0;
 }
 
 .cursor-inner.active {

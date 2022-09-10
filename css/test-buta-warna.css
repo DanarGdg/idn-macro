@@ -14,7 +14,7 @@
 /* END SCROLLBAR */
 
 body {
-  /* overflow-x: hidden;  */
+  overflow-x: hidden; 
 }
 
 /* NAVBAR */
@@ -34,6 +34,10 @@ body {
 .navbar.sticky{
   background-color: white;
   color: black;
+}
+
+.logo {
+  cursor: pointer;
 }
 
 .logo img:nth-child(2) {

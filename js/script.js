@@ -38,7 +38,6 @@ const searchInput = document.querySelector('.search input')
 const iconFacebook = document.querySelectorAll('.icon-facebook')
 const iconTwitter = document.querySelectorAll('.icon-twitter')
 const iconInstagram = document.querySelectorAll('.icon-instagram')
-const load = document.querySelector('.loadOut')
 
 let titleBlog = document.querySelectorAll('.title-blog')
 
@@ -94,12 +93,7 @@ window.addEventListener('scroll', function() {
 
 // BLOG NAVBAR EVENT ON CLICK
 blog.addEventListener('click', () => {
-    // delay click to all-blog.html
-    setTimeout(function(){
-        window.location.href = 'all-blog.html'
-    }, 1500)
-    // loadOut animation
-    load.style.animation = 'loadOut forwards .5s ease-out'
+    window.location.href = 'all-blog.html'
 })
 
 // BLOG1 EVENT ON CLICK
