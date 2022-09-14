@@ -51,7 +51,6 @@ iconInstagram.forEach(iconInstagram => {
 dropdown.addEventListener('click', () => {
     arrowDropdown.classList.toggle("active")
     dropdownContent.classList.toggle("active")
-    console.log(detailBlog);
 })
 
 hamburgerLogo.addEventListener('click', () => {

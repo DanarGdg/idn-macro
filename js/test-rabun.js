@@ -28,8 +28,6 @@ const hasilBuruk = document.querySelector('.hasil-buruk')
 const errorInput = document.querySelector('.error-input')
 const errorInputMobile = document.querySelector('.error-input-mobile')
 
-console.log(btnLanjut);
-
 dropdown.addEventListener('click', () => {
     arrowDropdown.classList.toggle("active")
     dropdownContent.classList.toggle("active")
@@ -184,7 +182,6 @@ function btnLanjutHandling() {
 
 function mengulangiTest(){
     hasil = 0
-    console.log(hasil);
     increment = 0
     testRabun.classList.remove('active')
     testSelesai.classList.remove('active')
@@ -266,3 +263,12 @@ mulai.forEach(mulai => {
         })
     })
 })
+
+function limit(element)
+{
+    var max_chars = 8;
+
+    if(element.value.length > max_chars) {
+        element.value = element.value.substr(0, max_chars);
+    }
+}

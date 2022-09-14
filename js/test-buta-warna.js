@@ -159,7 +159,6 @@ function mengulagiTest(){
 
   for (let i = 0; i < inputTest.length; i++) {
     const element = inputTest[i];
-    console.log(element);
     element.checked = false;
     jawaban.forEach(jawab => {
       jawab.classList.remove('benar')
