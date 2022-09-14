@@ -221,6 +221,7 @@ main{
 .test-rabun h1, .test-selesai h1, .hasil-bagus h2{
   color: #615D5D;
   font-size: 2.25em;
+  text-align: center;
 }
 
 .test-character{
@@ -232,6 +233,7 @@ main{
 
 .test-character h2{
   font-size: 1.875em;
+  text-align: center;
 }
 
 .test-rabun p{
@@ -876,6 +878,51 @@ footer {
 
 /* END MAIN */
 
+#mulai-tes {
+  position: relative;
+  line-height: 1;
+  width: auto;
+  height: 40px;
+  padding: 5px 20px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 1;
+  border-right: 1px solid #000;
+}
+
+#mulai-tes > p {
+  font-size: 10px;
+  font-style: normal;
+}
+
+#mulai-tes .block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  transition: 0.5s;
+  transform: translateX(100%);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+#mulai-tes:hover .block {
+  transform: translateX(0);
+}
+
+#mulai-tes:hover {
+  color: #000;
+  font-weight: 500;
+}
 
 /* FOOTER  */
   footer {
